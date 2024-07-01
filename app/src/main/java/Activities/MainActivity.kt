@@ -1,4 +1,4 @@
-package com.model.notes
+package Activities
 
 import android.app.Activity
 
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,PopupMe
 
         }
         binding.faBtn.setOnClickListener{
-            val intent=Intent(this,AddNote::class.java)
+            val intent=Intent(this, AddNote::class.java)
             getcontent.launch(intent)
         }
 
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,PopupMe
 
     override fun onItemClicked(note: Note) {
 
-      val intent=Intent(this@MainActivity,AddNote::class.java)
+      val intent=Intent (this@MainActivity, AddNote::class.java)
 
         intent.putExtra("current_note",note)
         updateNote.launch(intent)

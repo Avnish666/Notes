@@ -1,4 +1,4 @@
-package com.model.notes
+package Activities
 
 import android.app.Activity
 import android.content.Intent
