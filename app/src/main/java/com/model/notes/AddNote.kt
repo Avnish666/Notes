@@ -50,6 +50,7 @@ class AddNote : AppCompatActivity() {
                 }
             val intent= Intent()
                 intent.putExtra("note",note)
+
                 setResult(Activity.RESULT_OK,intent)
                 finish()
 
@@ -60,6 +61,9 @@ class AddNote : AppCompatActivity() {
                 Toast.makeText(this@AddNote,"Please enter some data ",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+        }
+        binding.backarrow.setOnClickListener(){
+            onBackPressed()
         }
     }
 }
