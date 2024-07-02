@@ -49,6 +49,7 @@ class AddNote : AppCompatActivity() {
                     note= Note(null,title,note_desc,formatter.format(Date()))
                 }
             val intent= Intent()
+
                 intent.putExtra("note",note)
 
                 setResult(Activity.RESULT_OK,intent)

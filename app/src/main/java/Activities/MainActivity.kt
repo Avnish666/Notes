@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,PopupMe
     }
 
     private fun initUi() {
-   binding.recyclerView.setHasFixedSize(true)
+       binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.layoutManager = StaggeredGridLayoutManager(2,LinearLayout.VERTICAL)
         adapter= NoteAdapter(this,this)
         binding.recyclerView.adapter= adapter
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,PopupMe
 
     override fun onItemClicked(note: Note) {
 
-      val intent=Intent (this@MainActivity, AddNote::class.java)
+      val intent=Intent ( this@MainActivity, AddNote::class.java)
 
         intent.putExtra("current_note",note)
         updateNote.launch(intent)

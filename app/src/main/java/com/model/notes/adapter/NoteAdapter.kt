@@ -66,7 +66,7 @@ fun filterList(search:String){
         list.add(R.color.c4)
         list.add(R.color.c5)
         list.add(R.color.c6)
-
+        list.add(R.color.c7)
 
         val seed=System.currentTimeMillis().toInt()
         val randomIndex= Random(seed).nextInt(list.size)
